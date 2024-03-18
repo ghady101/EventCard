@@ -1,4 +1,4 @@
-import video from '../Assets/video.mp4';
+import video from '../Assets/video.MOV';
 
 function VideoPlayer() {
 	return (
