@@ -1,4 +1,4 @@
-import video from '../Assets/IMG_6214.MOV';
+import video from '../Assets/video.MOV';
 
 function VideoPlayer() {
 	return (
