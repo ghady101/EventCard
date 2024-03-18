@@ -10,6 +10,13 @@ import Party from './Party';
 import Outro from './Outro';
 
 function SlideView() {
+	const handleBeforeChange = (current, next) => {
+		// 3 - 4
+		const outroSlide = document.querySelector('.outro-slide');
+		if (next !== 3) {
+			// Assuming Outro is the 4th slide (index 3)
+		}
+	};
 	return (
 		<div className='container'>
 			<Slider
@@ -18,7 +25,8 @@ function SlideView() {
 				slidesToShow={1}
 				slidesToScroll={1}
 				infinite={false}
-				centerMode={true}>
+				centerMode={true}
+				beforeChange={handleBeforeChange}>
 				<div>
 					<Intro />
 				</div>
@@ -31,7 +39,7 @@ function SlideView() {
 				<div>
 					<Party />
 				</div>
-				<div>
+				<div className='outro-slide'>
 					<Outro />
 				</div>
 			</Slider>

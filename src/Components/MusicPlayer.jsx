@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useRef, useState } from 'react';
 import { MusicNote, MusicOff } from '@mui/icons-material';
+import song from '../Assets/song.mp3';
 
 const MusicPlayer = () => {
 	const [isMuted, setIsMuted] = useState(false);
-	const audioRef = React.createRef();
+	const audioRef = useRef(null);
 
 	const toggleMute = () => {
 		setIsMuted(!isMuted);
@@ -11,26 +12,8 @@ const MusicPlayer = () => {
 	};
 	return (
 		<div className='audio'>
-			<audio
-				style={{ display: 'none' }}
-				ref={audioRef}
-				src='song.m4a'
-				autoPlay
-				loop
-			/>
-			<div onClick={toggleMute}>
-				{!isMuted ? (
-					<MusicNote
-					// sx={{ fontSize: 36 }}
-					// className='sound-icon'
-					/>
-				) : (
-					<MusicOff
-					// sx={{ fontSize: 36 }}
-					// className='sound-icon'
-					/>
-				)}
-			</div>
+			<audio ref={audioRef} src={song} autoPlay={true} loop />
+			<div onClick={toggleMute}>{isMuted ? <MusicOff /> : <MusicNote />}</div>
 		</div>
 	);
 };
