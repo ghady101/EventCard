@@ -3,22 +3,24 @@ import video from '../Assets/video.MOV';
 
 function VideoPlayer() {
 	return (
-		// 	<div
-		// 		className='video'
-		// 		dangerouslySetInnerHTML={{
-		// 			__html: `
-		//     <video
-		//       loop
-		//       muted
-		//       autoplay
-		//       playsinline
-		//       src="${video}"
-		//     />,
-		//   `,
-		// }}></div>
-		<video loop muted autoplay playsinline>
-			<source src='../Assets/video.mp4' type='video/mp4' />
-		</video>
+		<div
+			className='video'
+			dangerouslySetInnerHTML={{
+				__html: `
+		    <video
+		      loop
+		      muted
+		      autoplay
+		      playsinline
+		      src="${video}"
+		    />,
+		  `,
+			}}></div>
+		// <div className='video'>
+		// 	<video loop muted autoplay playsinline>
+		// 		<source src={video} type='video/mp4' />
+		// 	</video>
+		// </div>
 	);
 }
 
