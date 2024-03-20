@@ -14,7 +14,7 @@ const MusicPlayer = () => {
 
 	return (
 		<div className='audio'>
-			<audio ref={audioRef} autoPlay loop muted={isMuted}>
+			<audio ref={audioRef} autoPlay loop muted={isMuted} playsinline>
 				<source src={song} type='audio/mp3' />
 			</audio>
 			<div onClick={toggleMute}>{!isMuted ? <MusicNote /> : <MusicOff />}</div>
