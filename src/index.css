@@ -201,7 +201,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .audio {
@@ -221,13 +221,78 @@ body {
   left: 50%;
 }
 
-.content {
+/* .content {
+  border: 2px solid blue;
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+} */
+
+.introContent {
+  position: relative;
   color: white;
+  height: 80vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.ceremonyContent,
+.partyContent,
+.dateContent,
+.giftContent {
+  position: relative;
+  color: white;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: flex-start;
 }
+
+.dateContent>.title {
+  padding-top: 1em;
+}
+
+.ceremonyContent>.title,
+.partyContent>.title,
+.giftContent>.title {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.outroContent {
+  position: relative;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 8em;
+}
+
+/* .content {
+  color: white;
+  display: flex;
+  height: 100vh !important;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} */
 
 .title {
   font-family: 'roboto', 'Dancing Script', cursive;

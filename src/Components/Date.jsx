@@ -1,11 +1,14 @@
 function Date() {
 	return (
-		<div className='content'>
+		<div className='dateContent'>
 			<h1 className='title'>Save The Date</h1>
 			<h3 className='text' style={{ marginBottom: '1.2em' }}>
 				06.07.2024
 			</h3>
-
+			<br />
+			<br />
+			<br />
+			<br />
 			<h3 className='text' style={{ marginBottom: '1.2em' }}>
 				love is in the air
 				<br />

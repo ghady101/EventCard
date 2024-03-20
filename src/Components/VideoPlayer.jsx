@@ -1,5 +1,5 @@
-import video from '../Assets/video.MOV';
-// import video from '../Assets/video.mp4';
+// import video from '../Assets/video.MOV';
+import video from '../Assets/video.mp4';
 
 function VideoPlayer() {
 	return (

@@ -1,6 +1,6 @@
 function Intro() {
 	return (
-		<div className='content'>
+		<div className='introContent'>
 			<h1 className='title' style={{ marginBottom: '.9em' }}>
 				Elia
 				<br />&<br />

@@ -1,6 +1,6 @@
 function Outro() {
 	return (
-		<div className='content '>
+		<div className='outroContent '>
 			<div className='main-outro'>
 				<img src='outro.jpeg' alt='outro' />
 				<h3 className='text '>Together Forever &#x1F5A4;</h3>

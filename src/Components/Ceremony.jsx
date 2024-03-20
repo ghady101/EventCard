@@ -2,8 +2,8 @@ import { AccessTimeFilled, LocationOn } from '@mui/icons-material';
 
 function Ceremony() {
 	return (
-		<div className='content'>
-			<h1 className='title' style={{ marginBottom: '0.7em' }}>
+		<div className='ceremonyContent'>
+			<h1 className='title' style={{ marginBottom: '0.5em' }}>
 				Wedding Ceremony
 			</h1>
 			<AccessTimeFilled

@@ -2,8 +2,8 @@ import { AccessTimeFilled, LocationOn } from '@mui/icons-material';
 
 function Party() {
 	return (
-		<div className='content'>
-			<h1 className='title  titlee' style={{ marginBottom: '0.7em' }}>
+		<div className='partyContent'>
+			<h1 className='title  titlee' style={{ marginBottom: '0.5em' }}>
 				Let&apos;s party!
 			</h1>
 			<AccessTimeFilled

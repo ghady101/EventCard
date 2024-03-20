@@ -8,6 +8,7 @@ import Date from './Date';
 import Ceremony from './Ceremony';
 import Party from './Party';
 import Outro from './Outro';
+import Gift from './Gift';
 
 function SlideView() {
 	const handleBeforeChange = (current, next) => {
@@ -24,7 +25,7 @@ function SlideView() {
 				centerPadding={0}
 				slidesToShow={1}
 				slidesToScroll={1}
-				infinite={false}
+				infinite={true}
 				centerMode={true}
 				beforeChange={handleBeforeChange}>
 				<div>
@@ -38,6 +39,9 @@ function SlideView() {
 				</div>
 				<div>
 					<Party />
+				</div>
+				<div>
+					<Gift />
 				</div>
 				<div className='outro-slide'>
 					<Outro />
