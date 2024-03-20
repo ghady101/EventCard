@@ -12,7 +12,7 @@ import Outro from './Outro';
 function SlideView() {
 	const handleBeforeChange = (current, next) => {
 		// 3 - 4
-		const outroSlide = document.querySelector('.outro-slide');
+		// const outroSlide = document.querySelector('.outro-slide');
 		if (next !== 3) {
 			// Assuming Outro is the 4th slide (index 3)
 		}

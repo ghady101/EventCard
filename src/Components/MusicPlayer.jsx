@@ -3,17 +3,21 @@ import { MusicNote, MusicOff } from '@mui/icons-material';
 import song from '../Assets/song.mp3';
 
 const MusicPlayer = () => {
-	const [isMuted, setIsMuted] = useState(false);
+	const [isMuted, setIsMuted] = useState(true);
 	const audioRef = useRef(null);
 
 	const toggleMute = () => {
 		setIsMuted(!isMuted);
-		audioRef.current.muted = !audioRef.current.muted;
+		// audioRef.current.muted = !audioRef.current.muted;
+		audioRef.current.play();
 	};
+
 	return (
 		<div className='audio'>
-			<audio ref={audioRef} src={song} autoPlay={true} loop />
-			<div onClick={toggleMute}>{isMuted ? <MusicOff /> : <MusicNote />}</div>
+			<audio ref={audioRef} autoPlay loop muted={isMuted}>
+				<source src={song} type='audio/mp3' />
+			</audio>
+			<div onClick={toggleMute}>{!isMuted ? <MusicNote /> : <MusicOff />}</div>
 		</div>
 	);
 };

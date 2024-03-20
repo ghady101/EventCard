@@ -1,4 +1,5 @@
 import video from '../Assets/video.MOV';
+// import video from '../Assets/video.mp4';
 
 function VideoPlayer() {
 	return (
@@ -14,6 +15,9 @@ function VideoPlayer() {
           src="${video}"
         />,
       `,
+				// <video loop muted autoplay playsinline>
+				// 	<source src="./Assets/video.mp4" type="video/mp4" />
+				// </video>,
 			}}></div>
 	);
 }
