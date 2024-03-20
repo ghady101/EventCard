@@ -289,7 +289,7 @@ body {
   font-size: 0.9em;
   position: absolute;
   bottom: 0;
-  animation: scaling 3s linear infinite, hiding 5s linear forwards;
+  animation: scaling 3s linear infinite, hiding 10s linear forwards;
 }
 
 @keyframes outro {
