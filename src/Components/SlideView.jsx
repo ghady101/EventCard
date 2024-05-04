@@ -27,7 +27,8 @@ function SlideView() {
 				slidesToScroll={1}
 				infinite={true}
 				centerMode={true}
-				beforeChange={handleBeforeChange}>
+				beforeChange={handleBeforeChange}
+			>
 				<div>
 					<Intro />
 				</div>
@@ -43,7 +44,7 @@ function SlideView() {
 				<div>
 					<Gift />
 				</div>
-				<div className='outro-slide'>
+				<div>
 					<Outro />
 				</div>
 			</Slider>
