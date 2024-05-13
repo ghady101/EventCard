@@ -13,7 +13,12 @@ function Gift() {
 				<br />
 				<br />
 				<span style={{ fontWeight: '900' }}>Account:</span> 20832780-03
+				<br />
+				<br />
 			</h3>
+			<span style={{ fontWeight: '900' }}>
+				Kindly confirm before <i>20th of June</i>
+			</span>
 		</div>
 	);
 }
