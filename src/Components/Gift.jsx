@@ -12,12 +12,15 @@ function Gift() {
 				held at whish money
 				<br />
 				<br />
-				<span style={{ fontWeight: '900' }}>Account:</span> 20832780-03
+				<span style={{ fontWeight: '900' }}>Account:</span> 20832780
 				<br />
 				<br />
 			</h3>
 			<span style={{ fontWeight: '900' }}>
-				Kindly confirm before <i>20th of June</i>
+				Kindly confirm before{' '}
+				<i>
+					<b>20th of June</b>
+				</i>
 			</span>
 		</div>
 	);
