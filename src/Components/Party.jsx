@@ -13,7 +13,7 @@ function Party() {
 			<h3 className='text textt' style={{ marginBottom: '1.5em' }}>
 				After Ceremony
 				<br />
-				8:30 PM
+				8:00 PM
 			</h3>
 			<LocationOn sx={{ fontSize: 36 }} style={{ marginBottom: '0.2em' }} />
 			<h3 className='text' style={{ marginBottom: '0.4em' }}>
